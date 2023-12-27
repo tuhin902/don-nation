@@ -1,0 +1,170 @@
+
+.main{
+  background-image: url(/assets/top-banner/banner-bg.jpg);
+  background-position: center center;
+  background-size: max(1200px,100vw);
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  padding-bottom: 150px;
+
+
+}
+
+
+.nav-link{
+  color: #ffffff;
+}
+.nav-link:hover{
+    color: #00725E;
+}
+
+.navdonate-btn {
+    display: inline-flex;
+    padding: 10px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #00725E;
+    border-radius: 0px 0px 30px 0px;
+    border: 1px solid var(--Primary-color, #00725E);
+}
+
+.toggle-button{
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.navdonate-btn:hover{
+  background-color: #00725E;
+  color: #ffffff;
+}
+
+nav img{
+  width: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+nav li{
+  position: relative;
+  z-index: 10;
+}
+
+nav button{
+  position: relative;
+  z-index: 10;
+}
+
+.donate-btn{
+    display: inline-flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #ffffff;
+    background-color: #00725E;
+    border-radius: 0px 0px 30px 0px;
+    border: 1px solid var(--Primary-color, #00725E);
+    text-decoration: none;
+}
+
+.donate-btn:hover{
+  background-color: #ffffff;
+  color: #00725E;
+  box-shadow: 10px 10px #00725E;
+}
+
+
+.details-btn{
+    display: inline-flex;
+    padding: 10px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #ffffff;
+    background-color: #00725E;
+    border-radius: 30px 0px 30px 0px;
+    border: 1px solid var(--Primary-color, #00725E);
+    text-decoration: none;
+}
+
+.details-btn:hover{
+  background-color: #ffffff;
+  color: #00725E;
+  box-shadow: 10px 10px #00725E;
+
+}
+
+
+
+
+h1 {
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+.categories{
+  background: var(--Color-Primary-50, #EEEAFC);
+  position: relative;
+  z-index: 10;
+  
+}
+
+.categories .circle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -61px;
+  top: -100px;
+  border-radius: 300px;
+  border: 40px solid var(--Primary-100, #D3CAF8);
+}
+
+
+.img1-relative{
+  position: relative;
+  width: 50%;
+  height: 400px;
+}
+
+.img2-absolute{
+  position: absolute;
+  top:-50px;
+  left: -50px;
+
+}
+.img3-absolute{
+  position: absolute;
+  bottom:-70px;
+  right: -90px;
+
+}
+
