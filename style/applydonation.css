@@ -30,16 +30,16 @@ nav img {
   width: 70px;
 }
 
-main {
-  height: 100vh;
-}
 
 .donation-img > div {
   height: 100%;
 }
 
 input[type="file"] {
-  display: none;
+  /* display: none; */
+  border: 2px solid #00725e;
+  width: 100%;
+  padding: 10px 10px;
 }
 
 label {
@@ -48,11 +48,30 @@ label {
 .details {
   border-radius: 2px;
   padding: 25px 23px;
-  border: 1px solid var(--Primary-color, #00725e);
+  border: 2px dashed var(--Primary-color, #00725e);
   background: #fff;
   box-shadow: 0px 4px 8px 0px rgba(0, 200, 156, 0.1);
 }
 
 #imageName {
   color: green;
+}
+
+
+.submit-btn{
+  width: 100%;
+  padding: 16px 24px;
+  gap: 10px;
+  color: #ffffff;
+  background-color: #18927b;
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid var(--Primary-color, #75b5a9);
+  font-weight: 800;
+}
+
+.submit-btn:hover{
+  background-color: #00725E;
+  font-size: 20px;
+  color: white;
+  box-shadow: 10px 10px black;
 }
