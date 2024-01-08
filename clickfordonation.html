@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation </title>
+    <link rel="stylesheet" href="./style/bootstrap-css/bootstrap.css">
+    <link rel="stylesheet" href="/style/clickfordonation.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-------------------------------------
+        
+        Navbar starts 
+    
+    --------------------------------------->
+    <header class="container bg-body-tertiary shadow">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container ">
+                <a class="navbar-brand me-3 " href="#">
+                    <img src="./assets/logo/logo.jpeg" alt="">
+                </a>
+                <button class="navbar-toggler toggle-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./applydonation.html">Apply for Donation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Donation List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Donation Rechiever</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Free Quran Shikkha/Free Namaz Shikkha</a>
+                        </li>
+
+                    </ul>
+                    <div>
+                        <button class="navdonate-btn">Donate now</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+    <!-------------------------------------
+        
+        Navbar Ends 
+    
+    --------------------------------------->
+
+
+
+    <!-------------------------------------
+        
+       Apply for donation starts
+    
+    --------------------------------------->
+
+    <main class="my-5">
+        <section class="container">
+            <h1 class="text-center text-success fw-semibold mb-5">অনুদানের জন্য ক্লিক করুন</h1>
+            <div class="row border border-2 border-success">
+                <div class="d-none d-lg-block col-lg-3 click-donation">
+                    <img src="./assets/clickfordonation/handshake.png" alt="">
+                </div>
+                <div class="col-lg-9 p-3">
+                    <h2 class="text-center text-success mb-2 fw-semibold">ডোনার তথ্য</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label fw-bold">ডোনার নাম </label>
+                            <input type="text" class=" w-100 px-2 py-2 border border-2 border-success shadow "
+                                id="donarname" name="name" required placeholder="নাম">
+
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="exampleInputPassword1" class="form-label fw-bold">মোবাইল নম্বর</label>
+                            <input type="text" class=" w-100 px-2 py-2 border border-2 border-success" id="number"
+                                name="number" required placeholder=" মোবাইল নম্বর">
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">জেলা</label>
+                            <select class="form-select w-100 px-2 py-2 border border-2 border-success"
+                                aria-label="Default select example" name="district" id="district" required>
+                                <option selected>আপনার জেলা নির্বাচন করুন</option>
+                                <option value="1">Chittagong</option>
+                                <option value="2">Sylhet</option>
+                                <option value="3">Dhaka</option>
+                            </select>
+
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">থানা</label>
+                            <select class="form-select w-100 px-2 py-2 border border-2 border-success"
+                                aria-label="Default select example" name="thana" id="thana" required>
+                                <option selected>আপনার থানা নির্বাচন করুন</option>
+                                <option value="1">Chittagong</option>
+                                <option value="2">Sylhet</option>
+                                <option value="3">Dhaka</option>
+                            </select>
+
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">দান খাত</label>
+                            <select class="form-select w-100 px-2 py-2 border border-2 border-success"
+                                aria-label="Default select example" name="thana" id="thana" required>
+                                <option selected>আপনার দান খাত নির্বাচন করুন</option>
+                                <option value="1">এতিমদের জন্য দায়িত্ব গ্রহণ করুন</option>
+                                <option value="2">গরীব মুক্তিযোদ্ধাদের জন্য গিফট</option>
+                                <option value="3">মসজিদের জন্য দান</option>
+                                <option value="3">চিকিৎসার জন্য দান</option>
+                                <option value="3">এক বেলা আহার</option>
+                            </select>
+
+                        </div>
+
+
+
+
+                        <button onclick="confirmation()" type="submit" class=" submit-btn">জমা দিন</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-------------------------------------
+        
+       Apply for donation Ends
+    
+    --------------------------------------->
+
+
+
+
+    <!-- Footer -->
+    <footer class="container footer bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p><img class="me-2" src="./assets/icons/gmail-icon.svg" alt="">Gmail: info@example.com</p>
+                    <p><img class="me-2" src="./assets/icons/phone-icon.svg" alt="">Phone: (123) 456-7890</p>
+                    <p><img class="me-2" src="./assets/icons/whatsapp-icon.svg" alt="">Whatsapp: (123) 456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 "><a class="nav-link" href="#"><img class="me-2"
+                                    src="./assets/icons/facebook-icon.svg" alt="">Facebook Page</a></li>
+                        <li><a class="nav-link" href="#"><img class="me-2" src="./assets/icons/youtube-icon.svg"
+                                    alt="">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">&copy; 2023 Your Website. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.addEventListener('load', function () {
+
+        })
+        function confirmation() {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+            swalWithBootstrapButtons.fire({
+                title: "এক মাত্র আল্লাহর সন্তুষ্টির জন্য দান করিলাম।",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "হ্যাঁ",
+                cancelButtonText: "না",
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    swalWithBootstrapButtons.fire({
+                        title: "আল্লাহ রাব্বুল আলামিন আপনার দানকে কবুল করে নিন।!",
+                        icon: "success"
+                    });
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire({
+                        title: "বাতিল",
+                        icon: "error"
+                    });
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
