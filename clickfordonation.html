@@ -7,8 +7,6 @@
     <title>Donation </title>
     <link rel="stylesheet" href="./style/bootstrap-css/bootstrap.css">
     <link rel="stylesheet" href="/style/clickfordonation.css">
-    <link rel="stylesheet" href="sweetalert2.min.css">
-
 
 
 
@@ -106,7 +104,7 @@
 
                         <div class="mb-3 ">
                             <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">জেলা</label>
-                            <select class="form-select w-100 px-2 py-2 border border-2 border-success"
+                            <select class=" w-100 px-2 py-2 border border-2 border-success"
                                 aria-label="Default select example" name="district" id="district" required>
                                 <option selected>আপনার জেলা নির্বাচন করুন</option>
                                 <option value="1">Chittagong</option>
@@ -117,7 +115,7 @@
                         </div>
                         <div class="mb-3 ">
                             <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">থানা</label>
-                            <select class="form-select w-100 px-2 py-2 border border-2 border-success"
+                            <select class=" w-100 px-2 py-2 border border-2 border-success"
                                 aria-label="Default select example" name="thana" id="thana" required>
                                 <option selected>আপনার থানা নির্বাচন করুন</option>
                                 <option value="1">Chittagong</option>
@@ -128,7 +126,7 @@
                         </div>
                         <div class="mb-3 ">
                             <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">দান খাত</label>
-                            <select class="form-select w-100 px-2 py-2 border border-2 border-success"
+                            <select class="w-100 px-2 py-2 border border-2 border-success"
                                 aria-label="Default select example" name="thana" id="thana" required>
                                 <option selected>আপনার দান খাত নির্বাচন করুন</option>
                                 <option value="1">এতিমদের জন্য দায়িত্ব গ্রহণ করুন</option>
@@ -139,11 +137,106 @@
                             </select>
 
                         </div>
+                        <div>
+                            <label class="fw-semibold" for="payment">পেমেন্ট</label>
+                            <div class="border border-2 border-success mb-5  p-2">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <label for="" class="fw-semibold">Cash On Delivary</label>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the
+                                                first item's accordion body.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                <label for="" class="fw-semibold">bKash</label>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="bkash-details">
+                                                    <p>অনুগ্রহ করে প্রথমে আপনার বিকাশ পেমেন্ট সম্পূর্ণ করুন, তারপর নিচের
+                                                        ফর্মে আপনার বিকাশ নম্বর এবং লেনদেন আইডি প্রদান করুন।</p>
+                                                    <p>bKash Personal Number: 01307769169</p>
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label class="fw-semibold " for="bkash-number">bKash
+                                                                Number:</label>
+                                                            <input type="text" id="bkash-number" name="bkash-number"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
 
+                                                        </div>
+                                                        <div>
+                                                            <label for="transaction-id" class="fw-semibold">Transaction
+                                                                ID:</label>
+                                                            <input type="text" id="transaction-id" name="transaction-id"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
+                                                        </div>
+                                                        <button type="submit" class="btn mt-2 btn-success">Order
+                                                            Now</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item ">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                <label for="" class="fw-semibold">Nagad</label>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="bkash-details">
+                                                    <p>অনুগ্রহ করে প্রথমে আপনার নগদ পেমেন্ট সম্পূর্ণ করুন, তারপর
+                                                        নিচের
+                                                        ফর্মে আপনার নগদ নম্বর এবং লেনদেন আইডি প্রদান করুন।</p>
+                                                    <p>Nagad Personal Number: 01307769169</p>
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label class="fw-semibold " for="bkash-number">Nagad
+                                                                Number:</label>
+                                                            <input type="text" id="bkash-number" name="bkash-number"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
 
+                                                        </div>
+                                                        <div>
+                                                            <label for="transaction-id" class="fw-semibold">Transaction
+                                                                ID:</label>
+                                                            <input type="text" id="transaction-id" name="transaction-id"
+                                                                class="w-50 px-2 py-1 d-block border border-2 border-black ">
+                                                        </div>
+                                                        <button type="submit" class="btn mt-2 btn-success">Order
+                                                            Now</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
 
-                        <button onclick="confirmation()" type="submit" class=" submit-btn">জমা দিন</button>
+                            </div>
+
+                            <button onclick="confirmation()" type="submit" class=" submit-btn">জমা দিন</button>
+                        </div>
                     </form>
 
                 </div>
@@ -189,7 +282,9 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/bootstrap-js/bootstrap.js"></script>
     <script>
         window.addEventListener('load', function () {
 
