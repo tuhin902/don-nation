@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap-css/bootstrap.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/beneficiarysignup.css">
+    <title>Beneficiary Signup</title>
+</head>
+
+<body>
+
+    <!-------------------------------------
+        
+        Navbar starts 
+    
+    --------------------------------------->
+    <header>
+
+        <nav class="navbar navbar-expand-lg container border border-0 border-bottom border-success rounded shadow-lg">
+            <div class="container ">
+                <a class="navbar-brand me-3 " href="#">
+                    <img src="./assets/logo/logo.jpeg" alt="">
+                </a>
+                <button class="navbar-toggler toggle-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/applydonation.html">Apply for Donation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Donation List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./donationrechiever.html">Donation Rechiever</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Free Quran Shikkha/Free Namaz Shikkha</a>
+                        </li>
+
+                    </ul>
+                    <div>
+                        <a href="./clickfordonation.html"><button class="navdonate-btn">Donate now</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+    <!-------------------------------------
+        
+        Navbar Ends 
+    
+    --------------------------------------->
+
+
+
+    <section>
+        <!-- top banner start -->
+        <div class="mb-5 container">
+            <div class="bannerimg position-relative">
+                <h3 class="text-white position-absolute bottom-50 start-50 fs-2 fw-bold">Beneficiary Registration Form
+                </h3>
+            </div>
+        </div>
+
+        <!-- top banner ends -->
+
+        <!-- registration form starts -->
+
+        <div class="container border border-success mb-5 shadow rounded ">
+            <h2 class="text-center mt-3 fw-bold text-success">
+                Beneficiary Registration Form
+            </h2>
+
+            <form action="" class="w-75 mx-auto">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">আপনার নাম </label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success shadow " id="name"
+                        name="name" required placeholder="আপনার নাম">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">আপনার বাবার নাম </label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success shadow " id="fathername"
+                        name="fahtername" required placeholder="আপনার বাবার নাম">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">আপনার মায়ের নাম </label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success shadow " id="mothername"
+                        name="mothername" required placeholder="আপনার মায়ের নাম">
+                </div>
+                <div class="mb-3 ">
+                    <label for="exampleInputPassword1" class="form-label fw-bold">মোবাইল নম্বর</label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success" id="number" name="number"
+                        required placeholder=" মোবাইল নম্বর">
+                </div>
+                <div class="mb-3 ">
+                    <label for="exampleInputPassword1" class="form-label fw-bold">হোয়াটসঅ্যাপ নম্বর</label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success" id="whatsappnumber"
+                        name="whatsappnumber" required placeholder=" হোয়াটসঅ্যাপ নম্বর">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">বেনেপিসিয়ারি একাউন্ট নাম্বার
+                        / বিকাশ</label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success shadow "
+                        id="paymentmaccount" name="paymentmaccount" required
+                        placeholder="বেনেপিসিয়ারি একাউন্ট নাম্বার /   বিকাশ">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">বেনেপিসিয়ারি একাউন্ট নাম্বার
+                        / বিকাশ</label>
+                    <select class=" w-100 px-2 py-2 border border-2 border-success shadow " id="donationsector"
+                        name="donationsector" required>
+                        <option value="">রিসিভার ডোনেশন সেক্টর</option>
+                        <option value="">রিসিভার ডোনেশন সেক্টর</option>
+                        <option value="">রিসিভার ডোনেশন সেক্টর</option>
+                    </select>
+
+                </div>
+                <div class="mb-3 ">
+                    <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">বর্তমান
+                        ঠিকানা</label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success" name="presentAddress"
+                        id="presentAddress" placeholder="বর্তমান ঠিকানা" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">স্থায়ী ঠিকানা</label>
+                    <input type="text" class=" w-100 px-2 py-2 border border-2 border-success" name="parmanentAddress"
+                        id="parmanentAddress" placeholder="স্থায়ী ঠিকানা" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">বর্তমান অবস্থা</label>
+                    <textarea name="presentcondition" cols="10" rows="5" id="presentcondition"
+                        class=" w-100 px-2 py-2 border border-2 border-success"></textarea>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">আপনার ইমেজ আপলোড করুন</label>
+                    <div>
+                        <input class=" w-100 px-2 py-2 border border-2 border-success" id="inputTag" name="image"
+                            type="file" required />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">পাসওয়ার্ড</label>
+                    <input type="password" class=" w-100 px-2 py-2 border border-2 border-success" name="password"
+                        id="password" placeholder="পাসওয়ার্ড" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">কনফার্ম পাসওয়ার্ড</label>
+                    <input type="password" class=" w-100 px-2 py-2 border border-2 border-success"
+                        name="confirmpassword" id="confirmpassword" placeholder="কনফার্ম পাসওয়ার্ড" required>
+                </div>
+                <p class="fs-5 fw-semibold mt-5">আমার দেওয়া তত্ত্ব ১০০% সত্য ; ভুল তত্ত্ব দিলে বা ডোনার আমার বিরুদ্ধে
+                    আইনানুগ
+                    ব্যাবস্থা গ্রহন করতে পারবে।</p>
+                <button type="submit"
+                    class=" bg-success px-5 py-2 mb-5 text-white rounded fw-semibold fs-4 border-0">Confirm</button>
+
+            </form>
+        </div>
+        <!-- registration form ends -->
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="container footer bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p><img class="me-2" src="./assets/icons/gmail-icon.svg" alt="">Gmail: info@example.com</p>
+                    <p><img class="me-2" src="./assets/icons/phone-icon.svg" alt="">Phone: (123) 456-7890</p>
+                    <p><img class="me-2" src="./assets/icons/whatsapp-icon.svg" alt="">Whatsapp: (123) 456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 "><a class="nav-link" href="#"><img class="me-2"
+                                    src="./assets/icons/facebook-icon.svg" alt="">Facebook Page</a></li>
+                        <li><a class="nav-link" href="#"><img class="me-2" src="./assets/icons/youtube-icon.svg"
+                                    alt="">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">&copy; 2023 Your Website. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/bootstrap-js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -12,9 +12,11 @@
 }
 
 
+
 .nav-link{
-  color: #ffffff;
+  color: #000000;
 }
+
 .nav-link:hover{
     color: #00725E;
 }
@@ -132,9 +134,10 @@ span:nth-child(1) {
 
 
 .categories{
-  background: var(--Color-Primary-50, #c8c2e1);
+  /* background: var(--Color-Primary-50, #c8c2e1); */
   position: relative;
   z-index: 10;
+  
   
 }
 

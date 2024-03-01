@@ -1,0 +1,15 @@
+.topBanner {
+  height: 100vh;
+}
+
+.bannerimg {
+  background-image: url(/assets/beneficiary-signup/beneficiary-banner.jpeg);
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+
+

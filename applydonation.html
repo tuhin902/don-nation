@@ -16,9 +16,8 @@
         Navbar starts 
     
     --------------------------------------->
-    <header class="container bg-body-tertiary shadow">
-
-        <nav class="navbar navbar-expand-lg">
+    <header>
+        <nav class="navbar navbar-expand-lg container border border-0 border-bottom border-success rounded shadow-lg">
             <div class="container ">
                 <a class="navbar-brand me-3 " href="#">
                     <img src="./assets/logo/logo.jpeg" alt="">
@@ -34,16 +33,16 @@
                             <a class="nav-link " aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">About</a>
+                            <a class="nav-link " href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Apply for Donation</a>
+                            <a class="nav-link" href="/applydonation.html">Apply for Donation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Donation List</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Donation Rechiever</a>
+                            <a class="nav-link" href="./donationrechiever.html">Donation Rechiever</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Free Quran Shikkha/Free Namaz Shikkha</a>
@@ -51,13 +50,11 @@
 
                     </ul>
                     <div>
-                        <button class="navdonate-btn">Donate now</button>
+                        <a href="./clickfordonation.html"><button class="navdonate-btn">Donate now</button></a>
                     </div>
                 </div>
             </div>
         </nav>
-
-
     </header>
 
 
@@ -77,16 +74,20 @@
     --------------------------------------->
 
     <main>
-        <section class="container p-3   ">
+        <section class="container p-3  mt-5 ">
             <div class="row">
                 <div class="col-12  col-lg-6 donation-img ">
                     <div class="d-flex flex-column align-items-center py-5">
                         <p class=" fw-semibold  fs-1">অনুদানের জন্য আবেদন করুন</p>
                         <div class="my-5 flex justify-content-center align-items-center">
-                            <img   src="./assets/applydonationimg/applydonationimg.png" alt="">
-                          
+                            <img src="./assets/applydonationimg/applydonationimg.png" alt="">
+
                         </div>
-                        <p class="fs-5 px-3 text-justify fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae praesentium possimus, excepturi deleniti similique magnam minima tempora ad odio debitis deserunt architecto dicta ex dolorum velit neque in expedita autem, repellendus esse ullam, ut voluptate quis obcaecati. Vero cumque placeat consectetur illo quam, reprehenderit minima ducimus qui, quisquam modi quos.</p>
+                        <p class="fs-5 px-3 text-justify fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Recusandae praesentium possimus, excepturi deleniti similique magnam minima tempora ad
+                            odio debitis deserunt architecto dicta ex dolorum velit neque in expedita autem, repellendus
+                            esse ullam, ut voluptate quis obcaecati. Vero cumque placeat consectetur illo quam,
+                            reprehenderit minima ducimus qui, quisquam modi quos.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 details">
@@ -98,7 +99,6 @@
                             <label for="exampleInputEmail1" class="form-label fw-bold">আপনার নাম </label>
                             <input type="text" class=" w-100 px-2 py-2 border border-2 border-success shadow " id="name"
                                 name="name" required placeholder="আপনার নাম">
-
                         </div>
                         <div class="row">
                             <div class="mb-3 col-6">
@@ -114,7 +114,8 @@
                             </div>
                         </div>
                         <div class="mb-3 ">
-                            <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">বর্তমান ঠিকানা</label>
+                            <label for="exampleInputEmail1" class="form-label fw-bold  d-block fw-bold">বর্তমান
+                                ঠিকানা</label>
                             <input type="text" class=" w-100 px-2 py-2 border border-2 border-success"
                                 name="presentAddress" id="presentAddress" placeholder="Enter Your Present Address"
                                 required>
@@ -122,14 +123,13 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label fw-bold">স্থায়ী ঠিকানা</label>
                             <input type="text" class=" w-100 px-2 py-2 border border-2 border-success"
-                                name="parmanentAddress" id="parmanentAddress" placeholder="স্থায়ী ঠিকানা"
-                                required>
+                                name="parmanentAddress" id="parmanentAddress" placeholder="স্থায়ী ঠিকানা" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label fw-bold">আপনার ইমেজ আপলোড করুন</label>
-                           <div >
-                            <input id="inputTag" name="image" type="file" required/>
-                           </div>
+                            <div>
+                                <input id="inputTag" name="image" type="file" required />
+                            </div>
 
                         </div>
                         <div class="mb-3">
