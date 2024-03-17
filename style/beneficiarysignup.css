@@ -1,7 +1,3 @@
-.topBanner {
-  height: 100vh;
-}
-
 .bannerimg {
   background-image: url(/assets/beneficiary-signup/beneficiary-banner.jpeg);
   width: 100%;
@@ -12,4 +8,10 @@
   position: relative;
 }
 
-
+@media only screen and (max-width: 768px) {
+  .bannerimg {
+    height: 200px;
+    background-position: center;
+    position: relative;
+  }
+}
