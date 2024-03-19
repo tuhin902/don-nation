@@ -1,105 +1,95 @@
-
-.main{
+.main {
   background-image: url(/assets/top-banner/banner-bg.jpg);
   background-position: center center;
-  background-size: max(1200px,100vw);
+  background-size: max(1200px, 100vw);
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
   padding-bottom: 150px;
-
-
 }
 
-
-
-.nav-link{
+.nav-link {
   color: #000000;
 }
 
-.nav-link:hover{
-    color: #00725E;
+.nav-link:hover {
+  color: #00725e;
 }
 
 .navdonate-btn {
-    display: inline-flex;
-    padding: 10px 18px;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #00725E;
-    border-radius: 0px 0px 30px 0px;
-    border: 1px solid var(--Primary-color, #00725E);
+  display: inline-flex;
+  padding: 10px 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #00725e;
+  border-radius: 0px 0px 30px 0px;
+  border: 1px solid var(--Primary-color, #00725e);
 }
 
-.toggle-button{
+.toggle-button {
   background-color: #ffffff;
   position: relative;
   z-index: 10;
 }
 
-.navdonate-btn:hover{
-  background-color: #00725E;
+.navdonate-btn:hover {
+  background-color: #00725e;
   color: #ffffff;
 }
 
-nav img{
+nav img {
   width: 70px;
   position: relative;
   z-index: 10;
 }
 
-nav li{
+nav li {
   position: relative;
   z-index: 10;
 }
 
-nav button{
+nav button {
   position: relative;
   z-index: 10;
 }
 
-.donate-btn{
-    display: inline-flex;
-    padding: 16px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    color: #ffffff;
-    background-color: #00725E;
-    border-radius: 0px 0px 30px 0px;
-    border: 1px solid var(--Primary-color, #00725E);
-    text-decoration: none;
+.donate-btn {
+  display: inline-flex;
+  padding: 16px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ffffff;
+  background-color: #00725e;
+  border-radius: 0px 0px 30px 0px;
+  border: 1px solid var(--Primary-color, #00725e);
+  text-decoration: none;
 }
 
-.donate-btn:hover{
+.donate-btn:hover {
   background-color: #ffffff;
-  color: #00725E;
-  box-shadow: 10px 10px #00725E;
+  color: #00725e;
+  box-shadow: 10px 10px #00725e;
 }
 
-
-.details-btn{
-    display: inline-flex;
-    padding: 10px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    color: #ffffff;
-    background-color: #00725E;
-    border-radius: 30px 0px 30px 0px;
-    border: 1px solid var(--Primary-color, #00725E);
-    text-decoration: none;
+.details-btn {
+  display: inline-flex;
+  padding: 10px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ffffff;
+  background-color: #00725e;
+  border-radius: 30px 0px 30px 0px;
+  border: 1px solid var(--Primary-color, #00725e);
+  text-decoration: none;
 }
 
-.details-btn:hover{
+.details-btn:hover {
   background-color: #ffffff;
-  color: #00725E;
-  box-shadow: 10px 10px #00725E;
-
+  color: #00725e;
+  box-shadow: 10px 10px #00725e;
 }
-
-
-
 
 h1 {
   max-width: 40ch;
@@ -123,8 +113,6 @@ span:nth-child(1) {
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-
-
 @keyframes fade-in {
   100% {
     opacity: 1;
@@ -132,13 +120,10 @@ span:nth-child(1) {
   }
 }
 
-
-.categories{
+.categories {
   /* background: var(--Color-Primary-50, #c8c2e1); */
   position: relative;
   z-index: 10;
-  
-  
 }
 
 .categories .circle {
@@ -148,26 +133,65 @@ span:nth-child(1) {
   left: -61px;
   top: -100px;
   border-radius: 300px;
-  border: 40px solid var(--Primary-100, #D3CAF8);
+  border: 40px solid var(--Primary-100, #d3caf8);
 }
 
-
-.img1-relative{
+.img1-relative {
   position: relative;
   width: 50%;
   height: 400px;
 }
 
-.img2-absolute{
-  position: absolute;
-  top:-50px;
-  left: -50px;
-
+.img1 {
+  width: 300px;
 }
-.img3-absolute{
+
+.img2-absolute {
   position: absolute;
-  bottom:-70px;
+  top: -50px;
+  left: -61px;
+  width: 200px;
+}
+.img3-absolute {
+  position: absolute;
+  bottom: -70px;
   right: -90px;
-
+  width: 200px;
 }
 
+.bottom-video {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.bottom-video iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .img1-relative {
+    position: relative;
+    width: 50%;
+    height: 300px;
+  }
+
+  .img1 {
+    width: 200px;
+  }
+
+  .img2-absolute {
+    position: absolute;
+    top: -50px;
+    left: -61px;
+    width: 150px;
+  }
+  .img3-absolute {
+    position: absolute;
+    bottom: -58px;
+    right: -75px;
+    width: 150px;
+  }
+}
